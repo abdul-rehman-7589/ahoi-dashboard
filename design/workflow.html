@@ -65,7 +65,7 @@
 									<span class="menu-text">Create Bot</span>
 								</a>
 							</li>
-							<li>
+                            <li>
 								<a href="create-workflow.html">
 									<i class="icon-stacked_line_chart"></i>
 									<span class="menu-text">Create Workflow</span>
@@ -85,7 +85,7 @@
                                     </li>
 								</ul>
 							</li>
-							<li class="treeview">
+                            <li class="treeview active">
 								<a href="#!">
 									<i class="icon-add_task"></i>
 									<span class="menu-text">Workflows</span>
@@ -93,7 +93,7 @@
 
                                 <ul class="treeview-menu">
 									<li>
-										<a href="workflow.html">Workflow One</a>
+										<a href="workflow.html" class="active-sub">Workflow One</a>
 									</li>
 									<li>
                                         <a href="workflow.html">Workflow Two</a>
@@ -126,151 +126,12 @@
 					</div>
 					<!-- App header ends -->
 					<!-- App body starts -->
-					<div class="app-body">
+					<div class="app-body app-body-bg cursor-hand">
 						<!-- Container starts -->
 						<div class="container-fluid">
-							<!-- Row start -->
-							<div class="row">
-								<div class="col-xl-12 col-12">
-									<div class="row">
-										<div class="col-4">
-											<div class="card px-3 py-2 mb-4 d-flex flex-row align-items-center">
-												<div class="position-relative shape-block">
-													<img src="assets/images/shape1.png" class="img-fluid img-4x" alt="Bootstrap Themes" />
-													<i class="icon-book-open"></i>
-												</div>
-												<div class="ms-2">
-													<h3 class="m-0 fw-semibold">27</h3>
-													<h6 class="m-0 fw-light">Active</h6>
-												</div>
-											</div>
-										</div>
-										<div class="col-4">
-											<div class="card px-3 py-2 mb-4 d-flex flex-row align-items-center">
-												<div class="position-relative shape-block">
-													<img src="assets/images/shape2.png" class="img-fluid img-4x" alt="Bootstrap Themes" />
-													<i class="icon-check-circle"></i>
-												</div>
-												<div class="ms-2">
-													<h3 class="m-0 fw-semibold">18</h3>
-													<h6 class="m-0 fw-light">Solved</h6>
-												</div>
-											</div>
-										</div>
-										<div class="col-4">
-											<div class="card px-3 py-2 mb-4 d-flex flex-row align-items-center">
-												<div class="position-relative shape-block">
-													<img src="assets/images/shape3.png" class="img-fluid img-4x" alt="Bootstrap Themes" />
-													<i class="icon-x-circle"></i>
-												</div>
-												<div class="ms-2">
-													<h3 class="m-0 fw-semibold">12</h3>
-													<h6 class="m-0 fw-light">Closed</h6>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Row end -->
-							<!-- Row start -->
-							<div class="row">
-								<div class="col-xl-4 col-md-6 col-sm-12 col-12">
-									<div class="card mb-4">
-										<div class="card-header">
-											<h5 class="card-title">Live Calls</h5>
-										</div>
-										<div class="card-body">
-											<div id="liveCallsData"></div>
-
-											<div class="d-flex justify-content-center gap-4 my-4">
-												<div class="d-flex align-items-center">
-													<i class="icon-phone-incoming fs-3 me-3"></i> Incoming
-													<span class="badge rounded-pill bg-info ms-2">15</span>
-												</div>
-												<div class="d-flex align-items-center">
-													<i class="icon-phone-outgoing fs-3 me-3"></i> Outgoing
-													<span class="badge rounded-pill bg-dark ms-2">18</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-md-6 col-sm-12 col-12">
-									<div class="card mb-4">
-										<div class="card-header">
-											<h5 class="card-title">Agents Online</h5>
-										</div>
-										<div class="card-body">
-											<div id="agentsLiveData"></div>
-
-											<div class="d-flex justify-content-center gap-4 my-4">
-												<div class="d-flex align-items-center">
-													Busy
-													<span class="badge rounded-pill bg-info ms-2">15</span>
-												</div>
-												<div class="d-flex align-items-center">
-													Online
-													<span class="badge rounded-pill bg-dark ms-2">18</span>
-												</div>
-												<div class="d-flex align-items-center">
-													Offline
-													<span class="badge rounded-pill bg-white text-black ms-2">13</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-4 col-md-12 col-sm-12 col-12">
-									<div class="card mb-4">
-										<div class="card-header">
-											<h5 class="card-title">Tickets by Priority</h5>
-										</div>
-										<div class="card-body">
-											<div id="lticketsPriorityData"></div>
-
-											<div class="d-flex justify-content-center gap-4 my-4">
-												<div class="d-flex align-items-center">
-													High
-													<span class="badge rounded-pill bg-info ms-2">15</span>
-												</div>
-												<div class="d-flex align-items-center">
-													Medium
-													<span class="badge rounded-pill bg-dark ms-2">18</span>
-												</div>
-												<div class="d-flex align-items-center">
-													Low
-													<span class="badge rounded-pill bg-white text-black ms-2">13</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Row end -->
-							<!-- Row start -->
-							<div class="row">
-								<div class="col-xl-12 col-12">
-									<div class="row">
-										<div class="col-12">
-											<div class="card mb-4">
-												<div class="card-header">
-													<h5 class="card-title">Avg. Response Time</h5>
-												</div>
-												<div class="card-body">
-													<div id="avgTimeData"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Row end -->
-
-							
+							<h1>We can put your workflow code here!</h1>
 						</div>
 						<!-- Container ends -->
-
 					</div>
 					<!-- App body ends -->
 

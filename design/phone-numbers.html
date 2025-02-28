@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Gallery - Oxfin HelpDesk Admin Dashboard</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- *************
+			************ CSS Files *************
+		************* -->
+    <!-- Icomoon Font Icons css -->
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- *************
+			************ Vendor Css Files *************
+		************ -->
+
+    <!-- Scrollbar CSS -->
+    <link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" />
+
+    <!-- Tailwind play cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- End tailwind play cdn -->
+</head>
+
+<body>
+    <!-- Page wrapper start -->
+    <div class="page-wrapper">
+
+        <!-- Main container start -->
+        <div class="main-container">
+
+            <!-- Sidebar wrapper start -->
+            <nav id="sidebar" class="sidebar-wrapper">
+
+                <!-- App brand starts -->
+                <div class="app-brand px-3 py-2 d-flex align-items-center">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" class="logo" alt="Bootstrap Gallery" />
+                    </a>
+                </div>
+                <!-- App brand ends -->
+
+                <!-- Sidebar menu starts -->
+                <div class="sidebarMenuScroll">
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="create-bot.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Create Bot</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="create-workflow.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Create Workflow</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#!">
+                                <i class="icon-add_task"></i>
+                                <span class="menu-text">Bots</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="generic-bot.html">Generic Bot</a>
+                                </li>
+                                <li>
+                                    <a href="phone-numbers.html" class="active-sub">Phone Numbers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#!">
+                                <i class="icon-add_task"></i>
+                                <span class="menu-text">Workflows</span>
+                            </a>
+
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="workflow.html">Workflow One</a>
+                                </li>
+                                <li>
+                                    <a href="workflow.html">Workflow Two</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar menu ends -->
+
+            </nav>
+            <!-- Sidebar wrapper end -->
+
+            <!-- App container starts -->
+            <div class="app-container">
+
+                <!-- App header starts -->
+                <div class="app-header d-flex align-items-center">
+
+                    <!-- Toggle buttons start -->
+                    <div class="d-flex">
+                        <button class="btn btn-outline-light toggle-sidebar" id="toggle-sidebar">
+                            <i class="icon-menu"></i>
+                        </button>
+                        <button class="btn btn-outline-light pin-sidebar" id="pin-sidebar">
+                            <i class="icon-menu"></i>
+                        </button>
+                    </div>
+                    <!-- Toggle buttons end -->
+                </div>
+                <!-- App header ends -->
+                <!-- App body starts -->
+                <div class="app-body">
+                    <!-- Container starts -->
+                    <div class="container-fluid h-full">
+                        <div class="w-full h-full flex justify-center items-center">
+                            <div>
+                                <div class="inline-block border mb-2 p-2 rounded-3">
+                                    <span class="fs-3 icon-smartphone !text-5xl"></span>
+                                </div>
+                                <p>Assistants are able to be connected to phone numbers for calls.</p>
+                                <p>You can import from Twilio, Vonage, or create a free number directly from Vapi for
+                                    use with your assistants.</p>
+                                <button type="button"
+                                    class="!cursor-pointer !flex !justify-center !items-center !gap-2 btn btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#phoneNumberCreation">
+                                    <span>Create Free Number</span>
+                                    <span class="fs-3 icon-plus-circle"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="phoneNumberCreation" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="custom-tabs-container">
+                                            <ul class="nav nav-tabs" id="AhoiNumberTabs" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" id="tab-freeAhoiNumber"
+                                                        data-bs-toggle="tab" href="#freeAhoiNumber" role="tab"
+                                                        aria-selected="true" aria-controls="freeAhoiNumber"><i
+                                                            class="icon-layers"></i>Free Ahoi Number</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="tab-importTwilio" data-bs-toggle="tab"
+                                                        href="#importTwilio" role="tab" aria-controls="importTwilio"
+                                                        aria-selected="false"><i class="icon-layers"></i>Import
+                                                        Twillio</a>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" id="tab-importVonage" data-bs-toggle="tab"
+                                                        href="#importVonage" role="tab" aria-selected="false"
+                                                        aria-controls="importVonage">
+                                                        <i class="icon-layers"></i>Import Vonage</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="AhoiNumberTabsContent">
+                                                <div class="tab-pane fade show active" id="freeAhoiNumber"
+                                                    role="tabpanel">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="card mb-3">
+                                                                <div
+                                                                    class="card-body bg-[#eab3081a] border-[1px] border-[#eab30880]">
+                                                                    <p class="lh-2 custom-yellow-p">
+                                                                        Ahoi Phone Numbers are free of charge, and
+                                                                        limited to 10 numbers per wallet.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="m-0 mb-4">
+                                                                <label class="form-label">Area Code</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Ex: 415,510,310" />
+                                                            </div>
+                                                            <div
+                                                                class="card mb-3 border-[1px] border-[#3b82f680] bg-[#3b82f633]">
+                                                                <div class="card-body">
+                                                                    <p class="lh-2 custom-blue-p">
+                                                                        Functionality to create Vapi phone numbers is
+                                                                        only available for the US. For phone numbers
+                                                                        from other regions, please use the Import Phone
+                                                                        Numbers feature.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="btn btn-danger">
+                                                                Cancel
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary">
+                                                                Create
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="importTwilio"
+                                                    role="tabpanel">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="m-0 mb-4">
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label mb-2 text-white">Phone
+                                                                        Number</label>
+                                                                    <div class="flex items-center">
+                                                                        <!-- Country Select with Flags -->
+                                                                        <div class="relative w-[100px]">
+                                                                            <select
+                                                                                class="form-select !w-full appearance-none border rounded-lg p-2 bg-[#212529] text-white cursor-pointer">
+                                                                                <option value="US"
+                                                                                    class="bg-[#212529] text-white">🇺🇸
+                                                                                    +1</option>
+                                                                                <option value="DE"
+                                                                                    class="bg-[#212529] text-white">🇩🇪
+                                                                                    +49</option>
+                                                                                <option value="FR"
+                                                                                    class="bg-[#212529] text-white">🇫🇷
+                                                                                    +33</option>
+                                                                                <option value="NG"
+                                                                                    class="bg-[#212529] text-white">🇳🇬
+                                                                                    +234</option>
+                                                                                <option value="IN"
+                                                                                    class="bg-[#212529] text-white">🇮🇳
+                                                                                    +91</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                        <!-- Phone Number Input -->
+                                                                        <input type="text"
+                                                                            class="form-control w-2/3 border rounded-lg p-2 bg-[#212529] text-white placeholder:text-gray-400"
+                                                                            placeholder="Ex: 415-123-4567" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label">Twilio Account SID</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Twilio Account SID" />
+                                                                </div>
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label">Twilio Auth Token</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Twilio Auth Token" />
+                                                                </div>
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label">Label</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Label for phone number" />
+                                                                </div>  
+
+                                                            </div>
+                                                            <button type="button" class="btn btn-primary">
+                                                                Create
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="importVonage"
+                                                    role="tabpanel">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="m-0 mb-4">
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label mb-2 text-white">Phone
+                                                                        Number</label>
+                                                                    <div class="flex items-center">
+                                                                        <!-- Country Select with Flags -->
+                                                                        <div class="relative w-[100px]">
+                                                                            <select
+                                                                                class="form-select !w-full appearance-none border rounded-lg p-2 bg-[#212529] text-white cursor-pointer">
+                                                                                <option value="US"
+                                                                                    class="bg-[#212529] text-white">🇺🇸
+                                                                                    +1</option>
+                                                                                <option value="DE"
+                                                                                    class="bg-[#212529] text-white">🇩🇪
+                                                                                    +49</option>
+                                                                                <option value="FR"
+                                                                                    class="bg-[#212529] text-white">🇫🇷
+                                                                                    +33</option>
+                                                                                <option value="NG"
+                                                                                    class="bg-[#212529] text-white">🇳🇬
+                                                                                    +234</option>
+                                                                                <option value="IN"
+                                                                                    class="bg-[#212529] text-white">🇮🇳
+                                                                                    +91</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                        <!-- Phone Number Input -->
+                                                                        <input type="text"
+                                                                            class="form-control w-2/3 border rounded-lg p-2 bg-[#212529] text-white placeholder:text-gray-400"
+                                                                            placeholder="Ex: 415-123-4567" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label">API Key</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="API Key " />
+                                                                </div>
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label">API Secret</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="API Secret" />
+                                                                </div>
+                                                                <div class="m-0 mb-4">
+                                                                    <label class="form-label">Label</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Label for phone number" />
+                                                                </div>  
+
+                                                            </div>
+                                                            <button type="button" class="btn btn-primary">
+                                                                Create
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Container ends -->
+
+                </div>
+                <!-- App body ends -->
+
+                <!-- App footer start -->
+                <div class="app-footer">
+                    <span>© Bootstrap Gallery 2023</span>
+                </div>
+                <!-- App footer end -->
+
+            </div>
+            <!-- App container ends -->
+
+        </div>
+        <!-- Main container end -->
+
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- *************
+			************ JavaScript Files *************
+		************* -->
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+    <!-- Overlay Scroll JS -->
+    <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+    <!-- Apex Charts -->
+    <script src="assets/vendor/apex/apexcharts.min.js"></script>
+    <script src="assets/vendor/apex/custom/home/ticketsData.js"></script>
+    <script src="assets/vendor/apex/custom/home/avgTimeData.js"></script>
+    <script src="assets/vendor/apex/custom/home/liveCallsData.js"></script>
+    <script src="assets/vendor/apex/custom/home/agentsLiveData.js"></script>
+    <script src="assets/vendor/apex/custom/home/ticketsPriorityData.js"></script>
+    <script src="assets/vendor/apex/custom/home/newClosedData.js"></script>
+
+    <!-- Rating -->
+    <script src="assets/vendor/rating/raty.js"></script>
+    <script src="assets/vendor/rating/raty-custom.js"></script>
+
+    <!-- Custom JS files -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

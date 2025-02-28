@@ -4858,6 +4858,17 @@ fieldset:disabled .btn {
 [data-bs-theme="dark"] .navbar-toggler-icon {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+.custom-yellow-p {
+  color: rgb(234 179 8 / 1);
+}
+.custom-blue-p {
+  color: rgb(96 165 250 / 1 );
+}
+.app-body-bg {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+  cursor: pointer;
+}
 
 .card {
   --bs-card-spacer-y: 1rem;
