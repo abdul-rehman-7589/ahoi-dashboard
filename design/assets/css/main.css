@@ -14004,13 +14004,14 @@ a:hover {
 
 .app-brand {
   min-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
-  margin: 0 0 1rem 0;
 }
 .app-brand .logo {
-  max-width: 180px;
-  max-height: 40px;
+  width: 180px;
   transition: width 1s ease;
 }
 
