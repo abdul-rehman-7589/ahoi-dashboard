@@ -14003,15 +14003,15 @@ a:hover {
 }
 
 .app-brand {
-  min-height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  width: 120px;
+  margin-left: 55px;
+}
+@media screen and (max-width: 768px) {
+  .app-brand {
+    width: 80px !important;
+  }
 }
 .app-brand .logo {
-  width: 180px;
   transition: width 1s ease;
 }
 
