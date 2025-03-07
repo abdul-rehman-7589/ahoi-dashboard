@@ -282,90 +282,115 @@
                                         <ul class="nav nav-tabs justify-content-center" id="createBotTab"
                                             role="tablist">
                                             <li class="nav-item active" role="presentation">
-                                                <a class="nav-link active" id="tab-createBotQuestions"
-                                                    data-bs-toggle="tab" href="#createBotQuestions" role="tab"
-                                                    aria-controls="createBotQuestions"
-                                                    aria-selected="true">Questions</a>
+                                                <a class="nav-link active" id="tab-createBotQuestions1"
+                                                    data-bs-toggle="tab" href="#createBotQuestions1" role="tab"
+                                                    aria-controls="createBotQuestions1" aria-selected="true">Q-1</a>
                                             </li>
-                                            <!-- <li class="nav-item" role="presentation">
-                                                <a class="nav-link" id="tab-createBotSettings" data-bs-toggle="tab"
-                                                    href="#createBotSettings" role="tab"
-                                                    aria-controls="createBotSettings" aria-selected="false">Settings</a>
-                                            </li> -->
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="tab-createBotQuestions2" data-bs-toggle="tab"
+                                                    href="#createBotQuestions2" role="tab"
+                                                    aria-controls="createBotQuestions2" aria-selected="false">Q-2</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="tab-createBotQuestions3" data-bs-toggle="tab"
+                                                    href="#createBotQuestions3" role="tab"
+                                                    aria-controls="createBotQuestions3" aria-selected="false">Q-3</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="tab-createBotQuestions4" data-bs-toggle="tab"
+                                                    href="#createBotQuestions4" role="tab"
+                                                    aria-controls="createBotQuestions4" aria-selected="false">Q-4</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="tab-createBotQuestions5" data-bs-toggle="tab"
+                                                    href="#createBotQuestions5" role="tab"
+                                                    aria-controls="createBotQuestions5" aria-selected="false">Q-5</a>
+                                            </li>
                                         </ul>
                                         <div class="tab-content" id="createBotTabContent">
-                                            <div class="tab-pane fade show active" id="createBotQuestions"
+                                            <div class="tab-pane fade show active" id="createBotQuestions1"
                                                 role="tabpanel">
                                                 <div class="card mb-3">
                                                     <div class="card-body">
                                                         <div class="m-0">
-                                                            <label class="form-label !py-2 !text-xl"
-                                                                id="questionLabel">What's your name</label>
+                                                            <label class="form-label !py-2 !text-xl">What's your
+                                                                name?</label>
                                                             <input type="text" class="!p-[1rem] form-control"
-                                                                placeholder="Enter answer" id="answerInput" />
+                                                                placeholder="Enter answer" id="answer1" />
                                                         </div>
-                                                        <button id="nextButton" type="button" class="!my-4 btn btn-success btn-lg"
-                                                            onclick="nextQuestion()">
-                                                            Next
-                                                        </button>
+                                                        <button type="button" class="!my-4 btn btn-success btn-lg"
+                                                            onclick="nextTab(1)">Next</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div class="tab-pane fade" id="createBotSettings" role="tabpanel">
-
-                                                <form>
-                                                    <div class="m-0 mb-4">
-                                                        <label class="form-label">Name</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter name" />
+                                            <div class="tab-pane fade" id="createBotQuestions2" role="tabpanel">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="m-0">
+                                                            <label class="form-label !py-2 !text-xl">How can I assist you today?</label>
+                                                            <input type="text" class="!p-[1rem] form-control"
+                                                                placeholder="Enter answer" id="answer2" />
+                                                        </div>
+                                                        <button type="button" class="!my-4 btn btn-secondary btn-lg"
+                                                            onclick="prevTab(2)">Previous</button>
+                                                        <button type="button" class="!my-4 btn btn-success btn-lg"
+                                                            onclick="nextTab(2)">Next</button>
                                                     </div>
-                                                    <div class="m-0 mb-4">
-                                                        <label class="form-label">System Message</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter system message" />
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="createBotQuestions3" role="tabpanel">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="m-0">
+                                                            <label class="form-label !py-2 !text-xl">What date and time would you like your appointment?</label>
+                                                            <input type="text" class="!p-[1rem] form-control"
+                                                                placeholder="Enter answer" id="answer3" />
+                                                        </div>
+                                                        <button type="button" class="!my-4 btn btn-secondary btn-lg"
+                                                            onclick="prevTab(3)">Previous</button>
+                                                        <button type="button" class="!my-4 btn btn-success btn-lg"
+                                                            onclick="nextTab(3)">Next</button>
                                                     </div>
-                                                    <div class="m-0 mb-4">
-                                                        <label class="form-label">Selcet Voice</label>
-                                                        <select class="form-select">
-                                                            <option class="bg-[#212529]" selected="">Voices</option>
-                                                            <option class="bg-[#212529]" value="1">Voice one</option>
-                                                            <option class="bg-[#212529]" value="2">Voice Two</option>
-                                                            <option class="bg-[#212529]" value="3">Voice Three</option>
-                                                        </select>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="createBotQuestions4" role="tabpanel">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="m-0">
+                                                            <label class="form-label !py-2 !text-xl">What service would you like to book?</label>
+                                                            <input type="text" class="!p-[1rem] form-control"
+                                                                placeholder="Enter answer" id="answer2" />
+                                                        </div>
+                                                        <button type="button" class="!my-4 btn btn-secondary btn-lg"
+                                                            onclick="prevTab(4)">Previous</button>
+                                                        <button type="button" class="!my-4 btn btn-success btn-lg"
+                                                            onclick="nextTab(4)">Next</button>
                                                     </div>
-                                                    <div class="m-0 mb-4">
-                                                        <label class="form-label">Greeting Message</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Enter greeting message" />
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="createBotQuestions5" role="tabpanel">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="m-0">
+                                                            <label class="form-label !py-2 !text-xl">Do you have any special requests?</label>
+                                                            <input type="text" class="!p-[1rem] form-control"
+                                                                placeholder="Enter answer" id="answer2" />
+                                                        </div>
+                                                        <button type="button" class="!my-4 btn btn-secondary btn-lg"
+                                                            onclick="prevTab(5)">Previous</button>
+                                                            <!-- <button type="button" class="!my-4 btn btn-success btn-lg"
+                                                            onclick="submitAnswers()">Submit</button> -->
                                                     </div>
-                                                    <div class="m-0 mb-4">
-                                                        <label class="form-label">Timeout Hangup Message</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Timeout Hangup Message" />
-                                                    </div>
-                                                    <div class="m-0 mb-4">
-                                                        <label class="form-label">Error Message</label>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Error Message" />
-                                                    </div>
-                                                    <div class="m-0 mb-4">
-                                                        <label class="form-label">Selcet Timezone</label>
-                                                        <select class="form-select">
-                                                            <option class="bg-[#212529]" selected="">Voices</option>
-                                                            <option class="bg-[#212529]" value="1">America Denvor
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </form>
-                                            </div> -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" class="btn btn-primary btn-lg">
                                         Create Bot
                                     </button>
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">
                                         Close
                                     </button>
                                 </div>
@@ -386,45 +411,42 @@
 			************ JavaScript Files *************
 		************* -->
 
-
         <script>
-            const questions = [
-              "What's your name?",
-              "What's your age?",
-              "Where do you live?",
-              "What's your favorite color?",
-              "What's your favorite food?",
-              "Do you like traveling?",
-              "What's your hobby?",
-              "What's your profession?",
-              "Do you like music?",
-              "What's your dream job?"
-            ];
-          
-            let currentQuestion = 0;
-            const answers = [];
-          
-            function nextQuestion() {
-              const answer = document.getElementById("answerInput").value;
-              if (answer.trim() !== "") {
-                answers.push(answer);
-                document.getElementById("answerInput").value = "";
-                currentQuestion++;
-                if (currentQuestion < questions.length) {
-                  document.getElementById("questionLabel").textContent = questions[currentQuestion];
-                  if (currentQuestion === questions.length - 1) {
-                    document.getElementById("nextButton").textContent = "Submit";
-                  }
-                } else {
-                  alert("Thank you for answering all questions!");
-                  console.log(answers);
+            function nextTab(current) {
+                const next = current + 1;
+                const currentTab = document.getElementById(`tab-createBotQuestions${current}`);
+                const nextTab = document.getElementById(`tab-createBotQuestions${next}`);
+                if (nextTab) {
+                    currentTab.classList.remove("active");
+                    nextTab.classList.add("active");
+                    document.getElementById(`createBotQuestions${current}`).classList.remove("show", "active");
+                    document.getElementById(`createBotQuestions${next}`).classList.add("show", "active");
                 }
-              } else {
-                alert("Please enter an answer");
-              }
             }
-          </script>
-          
+
+            function prevTab(current) {
+                const prev = current - 1;
+                const currentTab = document.getElementById(`tab-createBotQuestions${current}`);
+                const prevTab = document.getElementById(`tab-createBotQuestions${prev}`);
+                if (prevTab) {
+                    currentTab.classList.remove("active");
+                    prevTab.classList.add("active");
+                    document.getElementById(`createBotQuestions${current}`).classList.remove("show", "active");
+                    document.getElementById(`createBotQuestions${prev}`).classList.add("show", "active");
+                }
+            }
+
+            function submitAnswers() {
+                const answers = [
+                    document.getElementById("answer1").value,
+                    document.getElementById("answer2").value,
+                    document.getElementById("answer3").value
+                ];
+                alert("Thank you for submitting your answers!");
+                console.log(answers);
+            }
+        </script>
+
 
         <!-- Required jQuery first, then Bootstrap Bundle JS -->
         <script src="assets/js/jquery.min.js"></script>
