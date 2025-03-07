@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jack Bot - Admin Dashboard</title>
+
+    <link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">
+
+    <!-- Meta -->
+    <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- *************
+			************ CSS Files *************
+		************* -->
+    <!-- Icomoon Font Icons css -->
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- *************
+			************ Vendor Css Files *************
+		************ -->
+
+    <!-- Scrollbar CSS -->
+    <link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" />
+
+    <!-- Tailwind play cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- End tailwind play cdn -->
+</head>
+
+<body>
+    <!-- Page wrapper start -->
+    <div class="page-wrapper">
+
+        <!-- Main container start -->
+        <div class="main-container">
+
+            <!-- Sidebar wrapper start -->
+            <nav id="sidebar" class="sidebar-wrapper">
+
+                <!-- App brand starts -->
+                <div class="logo-container app-brand px-3 pt-3">
+                    <a href="index.html">
+                        <img src="assets/images/logo/Jack Bot_SM.png" class="logo" alt="Bootstrap Gallery" />
+                    </a>
+                </div>
+                <!-- App brand ends -->
+
+                <!-- Sidebar menu starts -->
+                <div class="sidebarMenuScroll">
+                    <ul class="sidebar-menu">
+                        <li class="active current-page">
+                            <a href="index.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="create-bot.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Create Bot</span>
+                            </a>
+                        </li>
+                        <li class="treeview active">
+                            <a href="#!">
+                                <i class="icon-add_task"></i>
+                                <span class="menu-text">Bots</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="generic-bot.html">Generic Bot</a>
+                                </li>
+                                <li>
+                                    <a href="test-bot.html" class="active-sub">Test Bot</a>
+                                </li>
+                                <li>
+                                    <a href="phone-numbers.html">Phone Numbers</a>
+                                </li>
+                                <li>
+                                    <a href="files.html">Files</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar menu ends -->
+
+            </nav>
+            <!-- Sidebar wrapper end -->
+
+            <!-- App container starts -->
+            <div class="app-container">
+
+                <!-- App header starts -->
+                <div class="app-header d-flex align-items-center">
+
+                    <!-- Toggle buttons start -->
+                    <div class="d-flex">
+                        <button class="btn btn-outline-light toggle-sidebar" id="toggle-sidebar">
+                            <i class="icon-menu"></i>
+                        </button>
+                        <button class="btn btn-outline-light pin-sidebar" id="pin-sidebar">
+                            <i class="icon-menu"></i>
+                        </button>
+                    </div>
+                    <!-- Toggle buttons end -->
+                </div>
+                <!-- App header ends -->
+                <!-- App body starts -->
+                <div class="app-body">
+                    <!-- Container starts -->
+                    <div class="container-fluid">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="custom-tabs-container">
+                                    <ul class="nav nav-tabs" id="customTab3" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="tab-oneAA" data-bs-toggle="tab" href="#oneAA"
+                                                role="tab" aria-controls="oneAA" aria-selected="true"><i
+                                                    class="icon-layers"></i>Model</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="tab-twoAA" data-bs-toggle="tab" href="#twoAA"
+                                                role="tab" aria-controls="twoAA" aria-selected="false"><i
+                                                    class="icon-layers"></i>Tab Two</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="tab-threeAA" data-bs-toggle="tab" href="#threeAA"
+                                                role="tab" aria-controls="threeAA" aria-selected="false"><i
+                                                    class="icon-layers"></i>Tab Three</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="customTabContent3">
+                                        <div class="tab-pane fade show active" id="oneAA" role="tabpanel">
+                                            <div class="m-0 mb-2">
+												<label class="form-label">First Message</label>
+												<input type="text" class="form-control" placeholder="Enter text" />
+											</div>
+                                            <div class="m-0 mb-2">
+												<label class="form-label">System Prompt</label>
+												<textarea class="form-control" rows="3"></textarea>
+											</div>
+                                        </div>
+                                        <div class="tab-pane fade" id="twoAA" role="tabpanel">
+                                            <h3 class="text-danger">Some Description</h3>
+                                        </div>
+                                        <div class="tab-pane fade" id="threeAA" role="tabpanel">
+                                            <h3 class="text-primary">Some Description</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Container ends -->
+
+                </div>
+                <!-- App body ends -->
+
+
+
+            </div>
+            <!-- App container ends -->
+
+        </div>
+        <!-- Main container end -->
+
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- *************
+			************ JavaScript Files *************
+		************* -->
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+    <!-- Overlay Scroll JS -->
+    <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+    <!-- Apex Charts -->
+    <script src="assets/vendor/apex/apexcharts.min.js"></script>
+    <script src="assets/vendor/apex/custom/home/ticketsData.js"></script>
+    <script src="assets/vendor/apex/custom/home/avgTimeData.js"></script>
+    <script src="assets/vendor/apex/custom/home/liveCallsData.js"></script>
+    <script src="assets/vendor/apex/custom/home/agentsLiveData.js"></script>
+    <script src="assets/vendor/apex/custom/home/ticketsPriorityData.js"></script>
+    <script src="assets/vendor/apex/custom/home/newClosedData.js"></script>
+
+    <!-- Rating -->
+    <script src="assets/vendor/rating/raty.js"></script>
+    <script src="assets/vendor/rating/raty-custom.js"></script>
+
+    <!-- Custom JS files -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

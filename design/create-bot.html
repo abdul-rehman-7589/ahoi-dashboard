@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jack Bot - Admin Dashboard</title>
 
-    <link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">	
+    <link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">
 
     <!-- Meta -->
     <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
@@ -20,7 +20,9 @@
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
 
     <!-- Font Awsome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awsome CDN END -->
 
     <!-- Main CSS -->
@@ -48,8 +50,7 @@
                 <!-- App brand starts -->
                 <div class="logo-container app-brand px-3 pt-3">
                     <a href="index.html">
-                        <img src="assets/images/logo/Jack Bot_SM.png" 
-                        class="logo" alt="Bootstrap Gallery" />
+                        <img src="assets/images/logo/Jack Bot_SM.png" class="logo" alt="Bootstrap Gallery" />
                     </a>
                 </div>
                 <!-- App brand ends -->
@@ -79,7 +80,13 @@
                                     <a href="generic-bot.html">Generic Bot</a>
                                 </li>
                                 <li>
+                                    <a href="test-bot.html">Test Bot</a>
+                                </li>
+                                <li>
                                     <a href="phone-numbers.html">Phone Numbers</a>
+                                </li>
+                                <li>
+                                    <a href="files.html">Files</a>
                                 </li>
                             </ul>
                         </li>
@@ -95,12 +102,12 @@
                 <div class="app-header d-flex align-items-center">
                     <!-- Toggle buttons start -->
                     <div class="d-flex">
-                        <button class="btn btn-outline-light toggle-sidebar" id="toggle-sidebar">
+                        <butto n class="btn btn-outline-light toggle-sidebar" id="toggle-sidebar">
                             <i class="icon-menu"></i>
-                        </button>
-                        <button class="btn btn-outline-light pin-sidebar" id="pin-sidebar">
-                            <i class="icon-menu"></i>
-                        </button>
+                            </button>
+                            <button class="btn btn-outline-light pin-sidebar" id="pin-sidebar">
+                                <i class="icon-menu"></i>
+                            </button>
                     </div>
                 </div>
                 <!-- App header ends -->
@@ -259,65 +266,105 @@
                     <!-- App body ends -->
 
                     <!-- Blank Template Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1"
+                    <div class="modal fade modal-lg" id="exampleModalCenter" tabindex="-1"
                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalCenterTitle">
-                                        Disruptive Confrence Room
+                                        Create Your Bot
                                     </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
-                                        <div class="m-0 mb-4">
-                                            <label class="form-label">Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter name" />
-                                        </div>
-                                        <div class="m-0 mb-4">
-                                            <label class="form-label">System Message</label>
-                                            <input type="text" class="form-control"
-                                                placeholder="Enter system message" />
-                                        </div>
-                                        <div class="m-0 mb-4">
-                                            <label class="form-label">Selcet Voice</label>
-                                            <select class="form-select">
-                                                <option class="bg-[#212529]" selected="">Voices</option>
-                                                <option class="bg-[#212529]" value="1">Voice one</option>
-                                                <option class="bg-[#212529]" value="2">Voice Two</option>
-                                                <option class="bg-[#212529]" value="3">Voice Three</option>
-                                            </select>
-                                        </div>
-                                        <div class="m-0 mb-4">
-                                            <label class="form-label">Greeting Message</label>
-                                            <input type="text" class="form-control"
-                                                placeholder="Enter greeting message" />
-                                        </div>
-                                        <div class="m-0 mb-4">
-                                            <label class="form-label">Timeout Hangup Message</label>
-                                            <input type="text" class="form-control"
-                                                placeholder="Timeout Hangup Message" />
-                                        </div>
-                                        <div class="m-0 mb-4">
-                                            <label class="form-label">Error Message</label>
-                                            <input type="text" class="form-control" placeholder="Error Message" />
-                                        </div>
-                                        <div class="m-0 mb-4">
-                                            <label class="form-label">Selcet Timezone</label>
-                                            <select class="form-select">
-                                                <option class="bg-[#212529]" selected="">Voices</option>
-                                                <option class="bg-[#212529]" value="1">America Denvor</option>
-                                            </select>
-                                        </div>
+                                    <div class="custom-tabs-container">
+                                        <ul class="nav nav-tabs justify-content-center" id="createBotTab"
+                                            role="tablist">
+                                            <li class="nav-item active" role="presentation">
+                                                <a class="nav-link active" id="tab-createBotQuestions"
+                                                    data-bs-toggle="tab" href="#createBotQuestions" role="tab"
+                                                    aria-controls="createBotQuestions"
+                                                    aria-selected="true">Questions</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="tab-createBotSettings" data-bs-toggle="tab"
+                                                    href="#createBotSettings" role="tab"
+                                                    aria-controls="createBotSettings" aria-selected="false">Settings</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="createBotTabContent">
+                                            <div class="tab-pane fade show active" id="createBotQuestions"
+                                                role="tabpanel">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="m-0">
+                                                            <label class="form-label !py-2 !text-xl"
+                                                                id="questionLabel">What's your name</label>
+                                                            <input type="text" class="!p-[1rem] form-control"
+                                                                placeholder="Enter answer" id="answerInput" />
+                                                        </div>
+                                                        <button id="nextButton" type="button" class="!my-4 btn btn-success btn-lg"
+                                                            onclick="nextQuestion()">
+                                                            Next
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="createBotSettings" role="tabpanel">
 
-                                        <button type="button" class="btn btn-primary">
-                                            Create Bot
-                                        </button>
-                                    </form>
+                                                <form>
+                                                    <div class="m-0 mb-4">
+                                                        <label class="form-label">Name</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter name" />
+                                                    </div>
+                                                    <div class="m-0 mb-4">
+                                                        <label class="form-label">System Message</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter system message" />
+                                                    </div>
+                                                    <div class="m-0 mb-4">
+                                                        <label class="form-label">Selcet Voice</label>
+                                                        <select class="form-select">
+                                                            <option class="bg-[#212529]" selected="">Voices</option>
+                                                            <option class="bg-[#212529]" value="1">Voice one</option>
+                                                            <option class="bg-[#212529]" value="2">Voice Two</option>
+                                                            <option class="bg-[#212529]" value="3">Voice Three</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="m-0 mb-4">
+                                                        <label class="form-label">Greeting Message</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter greeting message" />
+                                                    </div>
+                                                    <div class="m-0 mb-4">
+                                                        <label class="form-label">Timeout Hangup Message</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Timeout Hangup Message" />
+                                                    </div>
+                                                    <div class="m-0 mb-4">
+                                                        <label class="form-label">Error Message</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Error Message" />
+                                                    </div>
+                                                    <div class="m-0 mb-4">
+                                                        <label class="form-label">Selcet Timezone</label>
+                                                        <select class="form-select">
+                                                            <option class="bg-[#212529]" selected="">Voices</option>
+                                                            <option class="bg-[#212529]" value="1">America Denvor
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">
+                                        Create Bot
+                                    </button>
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                         Close
                                     </button>
@@ -327,7 +374,7 @@
                     </div>
                     <!-- End Blank Template Modal -->
 
-                    
+
                 </div>
                 <!-- App container ends -->
             </div>
@@ -338,6 +385,47 @@
         <!-- *************
 			************ JavaScript Files *************
 		************* -->
+
+
+        <script>
+            const questions = [
+              "What's your name?",
+              "What's your age?",
+              "Where do you live?",
+              "What's your favorite color?",
+              "What's your favorite food?",
+              "Do you like traveling?",
+              "What's your hobby?",
+              "What's your profession?",
+              "Do you like music?",
+              "What's your dream job?"
+            ];
+          
+            let currentQuestion = 0;
+            const answers = [];
+          
+            function nextQuestion() {
+              const answer = document.getElementById("answerInput").value;
+              if (answer.trim() !== "") {
+                answers.push(answer);
+                document.getElementById("answerInput").value = "";
+                currentQuestion++;
+                if (currentQuestion < questions.length) {
+                  document.getElementById("questionLabel").textContent = questions[currentQuestion];
+                  if (currentQuestion === questions.length - 1) {
+                    document.getElementById("nextButton").textContent = "Submit";
+                  }
+                } else {
+                  alert("Thank you for answering all questions!");
+                  console.log(answers);
+                }
+              } else {
+                alert("Please enter an answer");
+              }
+            }
+          </script>
+          
+
         <!-- Required jQuery first, then Bootstrap Bundle JS -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>

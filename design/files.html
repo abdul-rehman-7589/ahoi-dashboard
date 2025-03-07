@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jack Bot - Admin Dashboard</title>
+
+    <link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">	
+
+    <!-- Meta -->
+    <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+    <!-- *************
+			************ CSS Files *************
+		************* -->
+    <!-- Icomoon Font Icons css -->
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- *************
+			************ Vendor Css Files *************
+		************ -->
+
+    <!-- Scrollbar CSS -->
+    <link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" />
+
+    <!-- Tailwind play cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- End tailwind play cdn -->
+</head>
+
+<body>
+    <!-- Page wrapper start -->
+    <div class="page-wrapper">
+
+        <!-- Main container start -->
+        <div class="main-container">
+
+            <!-- Sidebar wrapper start -->
+            <nav id="sidebar" class="sidebar-wrapper">
+
+                <!-- App brand starts -->
+                <div class="logo-container app-brand px-3 pt-3">
+                    <a href="index.html">
+                        <img src="assets/images/logo/Jack Bot_SM.png" 
+                        class="logo" alt="Bootstrap Gallery" />
+                    </a>
+                </div>
+                <!-- App brand ends -->
+
+                <!-- Sidebar menu starts -->
+                <div class="sidebarMenuScroll">
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="create-bot.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Create Bot</span>
+                            </a>
+                        </li>
+                        <li class="treeview active">
+                            <a href="#!">
+                                <i class="icon-add_task"></i>
+                                <span class="menu-text">Bots</span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="generic-bot.html">Generic Bot</a>
+                                </li>
+                                <li>
+                                    <a href="phone-numbers.html">Phone Numbers</a>
+                                </li>
+                                <li>
+                                    <a href="files.html" class="active-sub">Files</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar menu ends -->
+
+            </nav>
+            <!-- Sidebar wrapper end -->
+
+            <!-- App container starts -->
+            <div class="app-container">
+
+                <!-- App header starts -->
+                <div class="app-header d-flex align-items-center">
+
+                    <!-- Toggle buttons start -->
+                    <div class="d-flex">
+                        <button class="btn btn-outline-light toggle-sidebar" id="toggle-sidebar">
+                            <i class="icon-menu"></i>
+                        </button>
+                        <button class="btn btn-outline-light pin-sidebar" id="pin-sidebar">
+                            <i class="icon-menu"></i>
+                        </button>
+                    </div>
+                    <!-- Toggle buttons end -->
+                </div>
+                <!-- App header ends -->
+                <!-- App body starts -->
+                <div class="app-body">
+                    <!-- Container starts -->
+                    <div class="container-fluid h-full">
+                        <div class="w-full h-full flex justify-center items-center">
+                            <div>
+                                <div class="inline-block border mb-2 p-2 rounded-3 border-2 border-dotted border-primary">
+                                    <span class="fs-3 icon-upload_file"></span>
+                                    <p>Drag and drop a file here or click to select file locally</p>
+                                </div>
+                                <p>Assistants are able to be connected to phone numbers for calls.</p>
+                                <p>You can import from Twilio, Vonage, or create a free number directly from Vapi for
+                                    use with your assistants.</p>
+                                <button type="button"
+                                    class="!cursor-pointer !flex !justify-center !items-center !gap-2 btn btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#phoneNumberCreation">
+                                    <span>Create Free Number</span>
+                                    <span class="fs-3 icon-plus-circle"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Container ends -->
+
+                </div>
+                <!-- App body ends -->
+
+            </div>
+            <!-- App container ends -->
+
+        </div>
+        <!-- Main container end -->
+
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- *************
+			************ JavaScript Files *************
+		************* -->
+    <!-- Required jQuery first, then Bootstrap Bundle JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+    <!-- Overlay Scroll JS -->
+    <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+    <!-- Apex Charts -->
+    <script src="assets/vendor/apex/apexcharts.min.js"></script>
+    <script src="assets/vendor/apex/custom/home/ticketsData.js"></script>
+    <script src="assets/vendor/apex/custom/home/avgTimeData.js"></script>
+    <script src="assets/vendor/apex/custom/home/liveCallsData.js"></script>
+    <script src="assets/vendor/apex/custom/home/agentsLiveData.js"></script>
+    <script src="assets/vendor/apex/custom/home/ticketsPriorityData.js"></script>
+    <script src="assets/vendor/apex/custom/home/newClosedData.js"></script>
+
+    <!-- Rating -->
+    <script src="assets/vendor/rating/raty.js"></script>
+    <script src="assets/vendor/rating/raty-custom.js"></script>
+
+    <!-- Custom JS files -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
