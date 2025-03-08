@@ -1,136 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jack Bot - Admin Dashboard</title>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jack Bot - Admin Dashboard</title>
 
-    <link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">		
 
-    <!-- Meta -->
-    <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
-    <meta name="author" content="Bootstrap Gallery" />
-    <link rel="shortcut icon" href="assets/images/favicon.svg" />
+		<!-- Meta -->
+		<meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+		<meta name="author" content="Bootstrap Gallery" />
+		<link rel="shortcut icon" href="assets/images/favicon.svg" />
 
-    <!-- *************
+		<!-- *************
 			************ CSS Files *************
 		************* -->
-    <!-- Icomoon Font Icons css -->
-    <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
+		<!-- Icomoon Font Icons css -->
+		<link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
 
-    <!-- Font Awsome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Font Awsome CDN END -->
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="assets/css/main.css" />
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!-- *************
+		<!-- *************
 			************ Vendor Css Files *************
 		************ -->
 
-    <!-- Scrollbar CSS -->
-    <link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" />
+		<!-- Scrollbar CSS -->
+		<link rel="stylesheet" href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" />
 
-    <!-- Tailwind play cdn -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!-- End tailwind play cdn -->
-</head>
+		<!-- Tailwind play cdn -->
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+		<!-- End tailwind play cdn -->
+	</head>
 
-<body>
-    <!-- Page wrapper start -->
-    <div class="page-wrapper">
-        <!-- Main container start -->
-        <div class="main-container">
-            <!-- Sidebar wrapper start -->
-            <nav id="sidebar" class="sidebar-wrapper">
-                <!-- App brand starts -->
-                <div class="logo-container app-brand px-3 pt-3">
-                    <a href="index.html">
-                        <img src="assets/images/logo/Jack Bot_SM.png" class="logo" alt="Bootstrap Gallery" />
-                    </a>
-                </div>
-                <!-- App brand ends -->
+	<body>
+		<!-- Page wrapper start -->
+		<div class="page-wrapper">
 
-                <!-- Sidebar menu starts -->
-                <div class="sidebarMenuScroll">
-                    <ul class="sidebar-menu">
-                        <li>
-                            <a href="index.html">
-                                <i class="icon-stacked_line_chart"></i>
-                                <span class="menu-text">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="active current-page">
-                            <a href="create-bot.html">
-                                <i class="icon-stacked_line_chart"></i>
-                                <span class="menu-text">Create Bot</span>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#!">
-                                <i class="icon-add_task"></i>
-                                <span class="menu-text">Bots</span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li>
-                                    <a href="generic-bot.html">Generic Bot</a>
-                                </li>
-                                <li>
-                                    <a href="test-bot.html">Test Bot</a>
-                                </li>
-                                <li>
-                                    <a href="phone-numbers.html">Phone Numbers</a>
-                                </li>
-                                <li>
-                                    <a href="files.html">Files</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Sidebar menu ends -->
-            </nav>
-            <!-- Sidebar wrapper end -->
+			<!-- Main container start -->
+			<div class="main-container">
 
-            <!-- App container starts -->
-            <div class="app-container">
-                <!-- App header starts -->
-                <div class="app-header d-flex align-items-center">
-                    <!-- Toggle buttons start -->
-                    <div class="d-flex">
-                        <butto n class="btn btn-outline-light toggle-sidebar" id="toggle-sidebar">
-                            <i class="icon-menu"></i>
-                            </button>
-                            <button class="btn btn-outline-light pin-sidebar" id="pin-sidebar">
-                                <i class="icon-menu"></i>
-                            </button>
-                    </div>
-                </div>
-                <!-- App header ends -->
-                <!-- App body starts -->
-                <div class="app-body">
-                    <!-- Container starts -->
-                    <div class="container-fluid mb-6">
-                        <!-- Start Row -->
+				<!-- Sidebar wrapper start -->
+				<nav id="sidebar" class="sidebar-wrapper">
+
+					<!-- App brand starts -->
+					<div class="logo-container app-brand px-3 pt-3">
+						<a href="index.html">
+							<img src="assets/images/logo/Jack Bot_SM.png" 
+							class="logo" alt="Bootstrap Gallery" />
+						</a>
+					</div>
+					<!-- App brand ends -->
+
+					<!-- Sidebar menu starts -->
+					<div class="sidebarMenuScroll">
+						<ul class="sidebar-menu">
+							<li>
+								<a href="index.html">
+									<i class="icon-stacked_line_chart"></i>
+									<span class="menu-text">Dashboard</span>
+								</a>
+							</li>
+							<li class="active current-page">
+								<a href="create-bot.html">
+									<i class="icon-stacked_line_chart"></i>
+									<span class="menu-text">Create Bot</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="#!">
+									<i class="icon-add_task"></i>
+									<span class="menu-text">Bots</span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="generic-bot.html">Generic Bot</a>
+									</li>
+									<li>
+										<a href="test-bot.html">Test Bot</a>
+									</li>
+									<li>
+                                        <a href="phone-numbers.html">Phone Numbers</a>
+                                    </li>
+									<li>
+										<a href="files.html">Files</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- Sidebar menu ends -->
+
+				</nav>
+				<!-- Sidebar wrapper end -->
+
+				<!-- App container starts -->
+				<div class="app-container">
+
+					<!-- App header starts -->
+					<div class="app-header d-flex align-items-center">
+
+						<!-- Toggle buttons start -->
+						<div class="d-flex">
+							<button class="btn btn-outline-light toggle-sidebar" id="toggle-sidebar">
+								<i class="icon-menu"></i>
+							</button>
+							<button class="btn btn-outline-light pin-sidebar" id="pin-sidebar">
+								<i class="icon-menu"></i>
+							</button>
+						</div>
+						<!-- Toggle buttons end -->
+					</div>
+					<!-- App header ends -->
+					<!-- App body starts -->
+					<div class="app-body">
+						<!-- Container starts -->
+						<div class="container-fluid">
+
+                            <!-- Start Row -->
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="card mb-3">
-                                    <div class="card-body">
-                                        <div class="m-0">
-                                            <label class="form-label">Bot Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter text" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <h4 class="mb-3">Templates</h4>
+                                <h4 class="mb-3">Create your first voice Bot</h4>
                             </div>
                         </div>
+                        <!-- End Row -->
 
                         <!-- Start Row -->
                         <div class="row">
@@ -157,6 +151,14 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <!-- End Row -->
+                         
+                        <!-- Start Row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h4 class="mb-3">Templates</h4>
                             </div>
                         </div>
                         <!-- End Row -->
@@ -284,27 +286,37 @@
                                             <li class="nav-item active" role="presentation">
                                                 <a class="nav-link active" id="tab-createBotQuestions1"
                                                     data-bs-toggle="tab" href="#createBotQuestions1" role="tab"
-                                                    aria-controls="createBotQuestions1" aria-selected="true">Q-1</a>
+                                                    aria-controls="createBotQuestions1" aria-selected="true">Name</a>
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <a class="nav-link" id="tab-createBotQuestions2" data-bs-toggle="tab"
                                                     href="#createBotQuestions2" role="tab"
-                                                    aria-controls="createBotQuestions2" aria-selected="false">Q-2</a>
+                                                    aria-controls="createBotQuestions2" aria-selected="false">How</a>
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <a class="nav-link" id="tab-createBotQuestions3" data-bs-toggle="tab"
                                                     href="#createBotQuestions3" role="tab"
-                                                    aria-controls="createBotQuestions3" aria-selected="false">Q-3</a>
+                                                    aria-controls="createBotQuestions3" aria-selected="false">Voice</a>
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <a class="nav-link" id="tab-createBotQuestions4" data-bs-toggle="tab"
                                                     href="#createBotQuestions4" role="tab"
-                                                    aria-controls="createBotQuestions4" aria-selected="false">Q-4</a>
+                                                    aria-controls="createBotQuestions4" aria-selected="false">Greeting</a>
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <a class="nav-link" id="tab-createBotQuestions5" data-bs-toggle="tab"
                                                     href="#createBotQuestions5" role="tab"
-                                                    aria-controls="createBotQuestions5" aria-selected="false">Q-5</a>
+                                                    aria-controls="createBotQuestions5" aria-selected="false">Inactivity</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="tab-createBotQuestions6" data-bs-toggle="tab"
+                                                    href="#createBotQuestions6" role="tab"
+                                                    aria-controls="createBotQuestions6" aria-selected="false">Error Message</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="tab-createBotQuestions7" data-bs-toggle="tab"
+                                                    href="#createBotQuestions7" role="tab"
+                                                    aria-controls="createBotQuestions7" aria-selected="false">Timezone</a>
                                             </li>
                                         </ul>
                                         <div class="tab-content" id="createBotTabContent">
@@ -313,10 +325,8 @@
                                                 <div class="card mb-3">
                                                     <div class="card-body">
                                                         <div class="m-0">
-                                                            <label class="form-label !py-2 !text-xl">What's your
-                                                                name?</label>
-                                                            <input type="text" class="!p-[1rem] form-control"
-                                                                placeholder="Enter answer" id="answer1" />
+                                                            <label class="form-label !py-2 !text-xl">What’s your chatbot’s name?</label>
+                                                            <textarea class="form-control" rows="4" placeholder="Enter your chatbot name" id="answer1" aria-label="With textarea"></textarea>
                                                         </div>
                                                         <button type="button" class="!my-4 btn btn-success btn-lg"
                                                             onclick="nextTab(1)">Next</button>
@@ -327,9 +337,8 @@
                                                 <div class="card mb-3">
                                                     <div class="card-body">
                                                         <div class="m-0">
-                                                            <label class="form-label !py-2 !text-xl">How can I assist you today?</label>
-                                                            <input type="text" class="!p-[1rem] form-control"
-                                                                placeholder="Enter answer" id="answer2" />
+                                                            <label class="form-label !py-2 !text-xl">What should your chatbot do or help users with? Give us some details about the chatbot's job.</label>
+                                                            <textarea class="form-control" rows="4" placeholder="What should your chatbot do?" id="answer2" aria-label="With textarea"></textarea>
                                                         </div>
                                                         <button type="button" class="!my-4 btn btn-secondary btn-lg"
                                                             onclick="prevTab(2)">Previous</button>
@@ -339,12 +348,14 @@
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="createBotQuestions3" role="tabpanel">
-                                                <div class="card mb-3">
+                                                <div class="card mb-3"> 
                                                     <div class="card-body">
                                                         <div class="m-0">
-                                                            <label class="form-label !py-2 !text-xl">What date and time would you like your appointment?</label>
-                                                            <input type="text" class="!p-[1rem] form-control"
-                                                                placeholder="Enter answer" id="answer3" />
+                                                            <label class="form-label !text-xl">What voice would you like the bot to have?</label>
+                                                            <select class="form-select !p-[1rem]" id="answer3">
+                                                                <option class="bg-[#212529]" value="1" selected="">Alex</option>
+                                                                <option class="bg-[#212529]" value="2">Joe</option>
+                                                            </select>
                                                         </div>
                                                         <button type="button" class="!my-4 btn btn-secondary btn-lg"
                                                             onclick="prevTab(3)">Previous</button>
@@ -357,9 +368,8 @@
                                                 <div class="card mb-3">
                                                     <div class="card-body">
                                                         <div class="m-0">
-                                                            <label class="form-label !py-2 !text-xl">What service would you like to book?</label>
-                                                            <input type="text" class="!p-[1rem] form-control"
-                                                                placeholder="Enter answer" id="answer2" />
+                                                            <label class="form-label !py-2 !text-xl">What should your chatbot say to greet users?</label>
+                                                            <textarea class="form-control" rows="4" placeholder="What should your chatbot say to greet users" id="answer4" aria-label="With textarea"></textarea>
                                                         </div>
                                                         <button type="button" class="!my-4 btn btn-secondary btn-lg"
                                                             onclick="prevTab(4)">Previous</button>
@@ -372,12 +382,46 @@
                                                 <div class="card mb-3">
                                                     <div class="card-body">
                                                         <div class="m-0">
-                                                            <label class="form-label !py-2 !text-xl">Do you have any special requests?</label>
-                                                            <input type="text" class="!p-[1rem] form-control"
-                                                                placeholder="Enter answer" id="answer2" />
+                                                            <label class="form-label !py-2 !text-xl">What message should your chatbot give before ending a session due to inactivity?</label>
+                                                            <textarea class="form-control" rows="4" placeholder="What message should your chatbot give before ending a session due to inactivity" id="answer5" aria-label="With textarea"></textarea>
                                                         </div>
                                                         <button type="button" class="!my-4 btn btn-secondary btn-lg"
                                                             onclick="prevTab(5)">Previous</button>
+                                                            <button type="button" class="!my-4 btn btn-success btn-lg"
+                                                                onclick="nextTab(5)">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="createBotQuestions6" role="tabpanel">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="m-0">
+                                                            <label class="form-label !py-2 !text-xl">What should your chatbot say if it doesn’t understand a user?</label>
+                                                            <textarea class="form-control" rows="4" placeholder="What should your chatbot say if it doesn’t understand a user" id="answer5" aria-label="With textarea"></textarea>
+                                                        </div>
+                                                        <button type="button" class="!my-4 btn btn-secondary btn-lg"
+                                                            onclick="prevTab(6)">Previous</button>
+                                                            <button type="button" class="!my-4 btn btn-success btn-lg"
+                                                                onclick="nextTab(6)">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="createBotQuestions7" role="tabpanel">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div class="m-0">
+                                                            <label class="form-label !text-xl">What time zone is your chatbot in?</label>
+                                                            <select class="form-select !p-[1rem]" id="answer7">
+                                                                <option class="bg-[#212529]" value="EST" selected>Eastern Time (EST/EDT)</option>
+                                                                <option class="bg-[#212529]" value="CST">Central Time (CST/CDT)</option>
+                                                                <option class="bg-[#212529]" value="MST">Mountain Time (MST/MDT)</option>
+                                                                <option class="bg-[#212529]" value="PST">Pacific Time (PST/PDT)</option>
+                                                                <option class="bg-[#212529]" value="AKST">Alaska Time (AKST/AKDT)</option>
+                                                                <option class="bg-[#212529]" value="HST">Hawaii-Aleutian Time (HST)</option>
+                                                            </select>                                                            
+                                                        </div>
+                                                        <button type="button" class="!my-4 btn btn-secondary btn-lg"
+                                                            onclick="prevTab(7)">Previous</button>
                                                             <!-- <button type="button" class="!my-4 btn btn-success btn-lg"
                                                             onclick="submitAnswers()">Submit</button> -->
                                                     </div>
@@ -387,7 +431,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary btn-lg">
+                                    <button type="button" onclick="showAlert()" class="btn btn-primary btn-lg">
                                         Create Bot
                                     </button>
                                     <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">
@@ -397,21 +441,66 @@
                             </div>
                         </div>
                     </div>
+                    <div id="createBotSuccess" class="hidden alert border border-success alert-dismissible fade show text-success" role="alert">
+                        <b>Success!</b> A simple success alert.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                     <!-- End Blank Template Modal -->
 
+							
+						</div>
+						<!-- Container ends -->
 
-                </div>
-                <!-- App container ends -->
-            </div>
-            <!-- Main container end -->
-        </div>
-        <!-- Page wrapper end -->
+					</div>
+					<!-- App body ends -->
 
-        <!-- *************
+					
+
+				</div>
+				<!-- App container ends -->
+
+			</div>
+			<!-- Main container end -->
+
+		</div>
+		<!-- Page wrapper end -->
+
+		<!-- *************
 			************ JavaScript Files *************
 		************* -->
+		<!-- Required jQuery first, then Bootstrap Bundle JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+		<!-- *************
+			************ Vendor Js Files *************
+		************* -->
+
+		<!-- Overlay Scroll JS -->
+		<script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+		<script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+
+		<!-- Apex Charts -->
+		<script src="assets/vendor/apex/apexcharts.min.js"></script>
+		<script src="assets/vendor/apex/custom/home/ticketsData.js"></script>
+		<script src="assets/vendor/apex/custom/home/avgTimeData.js"></script>
+		<script src="assets/vendor/apex/custom/home/liveCallsData.js"></script>
+		<script src="assets/vendor/apex/custom/home/agentsLiveData.js"></script>
+		<script src="assets/vendor/apex/custom/home/ticketsPriorityData.js"></script>
+		<script src="assets/vendor/apex/custom/home/newClosedData.js"></script>
+
+		<!-- Rating -->
+		<script src="assets/vendor/rating/raty.js"></script>
+		<script src="assets/vendor/rating/raty-custom.js"></script>
+
+		<!-- Custom JS files -->
+		<script src="assets/js/custom.js"></script>
 
         <script>
+
+            function showAlert() {
+                $('#createBotSuccess').show();
+            }
             function nextTab(current) {
                 const next = current + 1;
                 const currentTab = document.getElementById(`tab-createBotQuestions${current}`);
@@ -440,41 +529,16 @@
                 const answers = [
                     document.getElementById("answer1").value,
                     document.getElementById("answer2").value,
-                    document.getElementById("answer3").value
+                    document.getElementById("answer3").value,
+                    document.getElementById("answer4").value,
+                    document.getElementById("answer5").value,
+                    document.getElementById("answer6").value,
+                    document.getElementById("answer7").value
                 ];
                 alert("Thank you for submitting your answers!");
                 console.log(answers);
             }
         </script>
-
-
-        <!-- Required jQuery first, then Bootstrap Bundle JS -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-        <!-- *************
-			************ Vendor Js Files *************
-		************* -->
-
-        <!-- Overlay Scroll JS -->
-        <script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
-        <script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
-
-        <!-- Apex Charts -->
-        <script src="assets/vendor/apex/apexcharts.min.js"></script>
-        <script src="assets/vendor/apex/custom/home/ticketsData.js"></script>
-        <script src="assets/vendor/apex/custom/home/avgTimeData.js"></script>
-        <script src="assets/vendor/apex/custom/home/liveCallsData.js"></script>
-        <script src="assets/vendor/apex/custom/home/agentsLiveData.js"></script>
-        <script src="assets/vendor/apex/custom/home/ticketsPriorityData.js"></script>
-        <script src="assets/vendor/apex/custom/home/newClosedData.js"></script>
-
-        <!-- Rating -->
-        <script src="assets/vendor/rating/raty.js"></script>
-        <script src="assets/vendor/rating/raty-custom.js"></script>
-
-        <!-- Custom JS files -->
-        <script src="assets/js/custom.js"></script>
-</body>
+	</body>
 
 </html>
