@@ -14037,6 +14037,13 @@ a:hover {
   flex-grow: 1;
   position: relative;
 }
+.file-uploader {
+  border: 2px dotted #0dcaf0 !important;
+  padding: 1rem;
+}
+.icon-upload_file:before {
+  font-size: 2.5rem;
+}
 .search-container .form-control {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);

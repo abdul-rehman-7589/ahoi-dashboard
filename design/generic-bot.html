@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+q1      1                       <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jack Bot - Admin Dashboard</title>
 
-    <link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">	
+    <link rel="icon" type="image/x-icon" href="/design/assets/images/logo/favicon.ico">
 
     <!-- Meta -->
     <meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
@@ -44,8 +44,7 @@
                 <!-- App brand starts -->
                 <div class="logo-container app-brand px-3 pt-3">
                     <a href="index.html">
-                        <img src="assets/images/logo/Jack Bot_SM.png" 
-                        class="logo" alt="Bootstrap Gallery" />
+                        <img src="assets/images/logo/Jack Bot_SM.png" class="logo" alt="Bootstrap Gallery" />
                     </a>
                 </div>
                 <!-- App brand ends -->
@@ -77,13 +76,19 @@
                                 <li>
                                     <a href="test-bot.html">Test Bot</a>
                                 </li>
-                                <li>
-                                    <a href="phone-numbers.html">Phone Numbers</a>
-                                </li>
-                                <li>
-                                    <a href="files.html">Files</a>
-                                </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="phone-numbers.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Phone Numbers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="files.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Files</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -113,40 +118,52 @@
                         <div class="row">
                             <div class="col-sm-5 col-12">
                                 <h3 class="mb-3">Generic Bot</h3>
-                                <div class="m-0 mb-4">
-                                    <label class="form-label">Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter name" />
+                                <div class="m-0 mb-2">
+                                    <label class="form-label">What’s your chatbot’s name?</label>
+                                    <textarea class="form-control" placeholder="What’s your chatbot’s name">My Chat Bot Name is Jack</textarea>
                                 </div>
-                                <div class="m-0 mb-4">
-                                    <label class="form-label">System Message</label>
-                                    <input type="text" class="form-control" placeholder="Enter system message" />
+                                <div class="m-0 mb-2">
+                                    <label class="form-label">What should your chatbot do or help users with? Give us
+                                        some details about the chatbot's job.</label>
+                                        <textarea class="form-control" rows="4" placeholder="What should your chatbot do">1: Answer FAQs
+2: Assist with troubleshooting
+3: Provide order status updates
+4: Connect users with a human agent if needed
+                                        </textarea>
                                 </div>
-                                <div class="m-0 mb-4">
-                                    <label class="form-label">Selcet Voice</label>
-                                    <select class="form-select">
-                                        <option class="bg-[#212529]" selected="">Voices</option>
-                                        <option class="bg-[#212529]" value="1">Voice one</option>
-                                        <option class="bg-[#212529]" value="2">Voice Two</option>
-                                        <option class="bg-[#212529]" value="3">Voice Three</option>
+                                <div class="m-0 mb-2">
+                                    <label class="form-label">What voice would you like the bot to
+                                        have?</label>
+                                    <select class="form-select" id="answer3">
+                                        <option class="bg-[#212529]" value="1">Alex</option>
+                                        <option class="bg-[#212529]" value="2" selected>Joe</option>
                                     </select>
                                 </div>
-                                <div class="m-0 mb-4">
-                                    <label class="form-label">Greeting Message</label>
-                                    <input type="text" class="form-control" placeholder="Enter greeting message" />
+                                <div class="m-0 mb-2">
+                                    <label class="form-label">What should your chatbot say to greet users?</label>
+                                    <textarea class="form-control" rows="3"
+                                        placeholder="What should your chatbot say to greet users">Hello Mate</textarea>
                                 </div>
-                                <div class="m-0 mb-4">
-                                    <label class="form-label">Timeout Hangup Message</label>
-                                    <input type="text" class="form-control" placeholder="Timeout Hangup Message" />
+                                <div class="m-0 mb-2">
+                                    <label class="form-label">What message should your chatbot give before ending a
+                                        session due to inactivity?</label>
+                                    <textarea class="form-control" rows="4"
+                                        placeholder="What message should your chatbot give before ending a session due to inactivity">It looks like you've been away for a while! I'll end this session now, but feel free to start a new one whenever you're ready. See you soon! 😊</textarea>
                                 </div>
-                                <div class="m-0 mb-4">
-                                    <label class="form-label">Error Message</label>
-                                    <input type="text" class="form-control" placeholder="Error Message" />
+                                <div class="m-0 mb-2">
+                                    <label class="form-label">What should your chatbot say if it doesn’t understand a user?</label>
+                                    <textarea class="form-control" rows="" placeholder="What should your chatbot say if it doesn’t understand a user" >I’m sorry, but I didn’t quite understand. Could you clarify or provide more details so I can assist you better?</textarea>
                                 </div>
-                                <div class="m-0 mb-4">
-                                    <label class="form-label">Selcet Timezone</label>
-                                    <select class="form-select">
-                                        <option class="bg-[#212529]" selected="">Voices</option>
-                                        <option class="bg-[#212529]" value="1">America Denvor</option>
+                                <div class="m-0 mb-2">
+                                    <label class="form-label">What time zone is your chatbot in?</label>
+                                    <select class="form-select" id="answer7">
+                                        <option class="bg-[#212529]" value="EST" selected>Eastern Time (EST/EDT)
+                                        </option>
+                                        <option class="bg-[#212529]" value="CST">Central Time (CST/CDT)</option>
+                                        <option class="bg-[#212529]" value="MST" selected>Mountain Time (MST/MDT)</option>
+                                        <option class="bg-[#212529]" value="PST">Pacific Time (PST/PDT)</option>
+                                        <option class="bg-[#212529]" value="AKST">Alaska Time (AKST/AKDT)</option>
+                                        <option class="bg-[#212529]" value="HST">Hawaii-Aleutian Time (HST)</option>
                                     </select>
                                 </div>
                                 <button type="button" class="btn btn-primary">
@@ -165,11 +182,6 @@
                                             <a class="nav-link" id="tab-botAddress" data-bs-toggle="tab"
                                                 href="#botAddress" role="tab" aria-controls="botAddress"
                                                 aria-selected="false"><i class="icon-layers"></i>Address</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link" id="tab-botQuestion" data-bs-toggle="tab"
-                                                href="#botQuestion" role="tab" aria-controls="botQuestion"
-                                                aria-selected="false"><i class="icon-layers"></i>Questions</a>
                                         </li>
                                         <li class="nav-item" role="presentation">
                                             <a class="nav-link" id="tab-botTransfers" data-bs-toggle="tab"
@@ -263,38 +275,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="botQuestion" role="tabpanel">
-                                            <div class="col-12">
-                                                <div class="card mb-3">
-                                                    <div class="card-body">
-                                                        <p class="lh-2">
-                                                            This is a simple way to provide question and answer training
-                                                            to the bot. Treat it like an FAQ or a knowledge base. The
-                                                            bot will use this information to help answer user questions.
-                                                            Consider any question that a receptionist or customer
-                                                            service representative might be asked.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="m-0 mb-4">
-                                                    <label class="form-label">Question</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Ex: What time are you opne?" />
-                                                </div>
-                                                <div class="m-0 mb-4">
-                                                    <label class="form-label">Answer</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Ex: We are open from 9am to 5pm Monday through Friday" />
-                                                </div>
-                                                <button type="button" class="btn btn-primary">
-                                                    Save
-                                                </button>
-
-                                                <button type="button" class="btn btn-danger">
-                                                    Upload CSV
-                                                </button>
-                                            </div>
-                                        </div>
                                         <div class="tab-pane fade" id="botTransfers" role="tabpanel">
                                             <div class="col-12">
                                                 <div class="card mb-3">
@@ -358,13 +338,13 @@
                                                 </div>
                                                 <div class="m-0 mb-4">
                                                     <label class="form-label">Professional 90%</label>
-                                                    <input type="range" class="form-control-range" data-id="professional"
-                                                        min="0" max="100" style="width: 100%">
+                                                    <input type="range" class="form-control-range"
+                                                        data-id="professional" min="0" max="100" style="width: 100%">
                                                 </div>
                                                 <div class="m-0 mb-4">
                                                     <label class="form-label">Curious 70%</label>
-                                                    <input type="range" class="form-control-range" data-id="professional"
-                                                        min="0" max="100" style="width: 100%">
+                                                    <input type="range" class="form-control-range"
+                                                        data-id="professional" min="0" max="100" style="width: 100%">
                                                 </div>
                                                 <div class="m-0 mb-4">
                                                     <label class="form-label">Witty 60%</label>
@@ -410,7 +390,7 @@
                 </div>
                 <!-- App body ends -->
 
-                
+
             </div>
             <!-- App container ends -->
         </div>

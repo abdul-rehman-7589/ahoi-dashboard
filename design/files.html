@@ -77,13 +77,19 @@
                                 <li>
                                     <a href="generic-bot.html">Generic Bot</a>
                                 </li>
-                                <li>
-                                    <a href="phone-numbers.html">Phone Numbers</a>
-                                </li>
-                                <li>
-                                    <a href="files.html" class="active-sub">Files</a>
-                                </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="phone-numbers.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Phone Numbers</span>
+                            </a>
+                        </li>
+                        <li class="active current-page">
+                            <a href="files.html">
+                                <i class="icon-stacked_line_chart"></i>
+                                <span class="menu-text">Files</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -116,20 +122,13 @@
                     <div class="container-fluid h-full">
                         <div class="w-full h-full flex justify-center items-center">
                             <div>
-                                <div class="inline-block border mb-2 p-2 rounded-3 border-2 border-dotted border-primary">
-                                    <span class="fs-3 icon-upload_file"></span>
-                                    <p>Drag and drop a file here or click to select file locally</p>
+                                <input type="file" id="fileInput" class="d-none">
+                            
+                                <div class="!cursor-pointer inline-block border mb-2 !text-center !p-8 rounded-3 file-uploader" onclick="document.getElementById('fileInput').click()">
+                                    <span class="fs-3 icon-upload_file" style="font-size: 32px;"></span>
+                                    <p class="text-center">Drag and drop a file here or click to select file locally</p>
                                 </div>
-                                <p>Assistants are able to be connected to phone numbers for calls.</p>
-                                <p>You can import from Twilio, Vonage, or create a free number directly from Vapi for
-                                    use with your assistants.</p>
-                                <button type="button"
-                                    class="!cursor-pointer !flex !justify-center !items-center !gap-2 btn btn-primary"
-                                    data-bs-toggle="modal" data-bs-target="#phoneNumberCreation">
-                                    <span>Create Free Number</span>
-                                    <span class="fs-3 icon-plus-circle"></span>
-                                </button>
-                            </div>
+                            </div>                            
                         </div>
 
                     </div>
@@ -178,5 +177,4 @@
     <!-- Custom JS files -->
     <script src="assets/js/custom.js"></script>
 </body>
-
-</html>
+~~
